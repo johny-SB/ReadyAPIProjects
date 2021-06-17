@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/pet/findByTags" path="/pet/findByTags" id="9e31b4ae-850b-4506-b063-c8c385c720dd" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9e31b4ae-850b-4506-b063-c8c385c720ddfileName">%2Fpet%2FfindByTags</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

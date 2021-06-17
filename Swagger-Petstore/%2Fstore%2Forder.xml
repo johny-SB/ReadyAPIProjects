@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/store/order" path="/store/order" id="1967c7a7-936e-49b2-afa8-ebb08517395b" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1967c7a7-936e-49b2-afa8-ebb08517395bfileName">%2Fstore%2Forder</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="placeOrder" id="6afe7c61-1a62-4bfb-b2cd-a7f78eeef018" method="POST">
+    <con:description>Place an order for a pet</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : false
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<Order>
+   <id>0</id>
+   <petId>0</petId>
+   <quantity>0</quantity>
+   <shipDate>2015-07-20T15:49:04-07:00</shipDate>
+   <status>placed</status>
+   <complete>false</complete>
+</Order>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : false
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="f576bcac-64c8-4292-858a-0b255ab5aaaf" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:request>{\r
+  "id" : 0,\r
+  "petId" : 0,\r
+  "quantity" : 0,\r
+  "shipDate" : "2015-07-20T15:49:04-07:00",\r
+  "status" : "placed",\r
+  "complete" : false\r
+}</con:request>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

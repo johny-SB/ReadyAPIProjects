@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/user/logout" path="/user/logout" id="ee25930a-6697-4428-a4e3-9143d538ed6c" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ee25930a-6697-4428-a4e3-9143d538ed6cfileName">%2Fuser%2Flogout</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="logoutUser" id="3635754d-2434-40d7-b185-cc8a5ab70045" method="GET">
+    <con:description>Logs out current logged in user session</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="fc66f515-d2f1-46ad-a7be-0994172b7bec" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

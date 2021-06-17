@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/pet/findByTags" method="GET" resourcePath="/pet/findByTags" id="d003972d-fc26-4be9-b4af-52c7f9769cfa" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d003972d-fc26-4be9-b4af-52c7f9769cfafileName">%2Fpet%2FfindByTags</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="7798a8a4-570a-4aa7-a4a2-f674773b0a0f" httpResponseStatus="200">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

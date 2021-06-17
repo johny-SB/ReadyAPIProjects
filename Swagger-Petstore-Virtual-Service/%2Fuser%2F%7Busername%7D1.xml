@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/user/{username}" method="DELETE" resourcePath="/user/{username}" id="cdec2669-b74f-4130-8f62-57997f3e026d" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cdec2669-b74f-4130-8f62-57997f3e026dfileName">%2Fuser%2F%7Busername%7D1</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="f5f795c3-8689-43da-bad3-e19b344dc504" httpResponseStatus="200">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

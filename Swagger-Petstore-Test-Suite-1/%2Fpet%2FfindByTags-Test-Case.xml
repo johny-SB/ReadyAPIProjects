@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="45f381e6-4d2b-46d0-a56e-4e46e4b7d260" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/pet/findByTags Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/pet/findByTags] located at [/pet/findByTags]</con:description>
+  <con:settings>
+    <con:setting id="45f381e6-4d2b-46d0-a56e-4e46e4b7d260fileName">%2Fpet%2FfindByTags-Test-Case</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

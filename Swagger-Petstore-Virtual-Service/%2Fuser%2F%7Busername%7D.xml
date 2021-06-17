@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/user/{username}" method="GET" resourcePath="/user/{username}" id="f5563a02-ee5d-4f8a-ae20-58c482b9dcd5" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f5563a02-ee5d-4f8a-ae20-58c482b9dcd5fileName">%2Fuser%2F%7Busername%7D</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="15729506-6a09-41fe-b93a-3cc3e96dd312" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+    <con:settings/>
+    <con:responseContent>{
+  "id" : 0,
+  "username" : "string",
+  "firstName" : "string",
+  "lastName" : "string",
+  "email" : "string",
+  "password" : "string",
+  "phone" : "string",
+  "userStatus" : 0
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 2" id="4a61cd38-d4d4-4116-a4a3-eba030b4bee2" httpResponseStatus="200" mediaType="application/xml" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+    <con:settings/>
+    <con:responseContent><![CDATA[<User>
+   <id>0</id>
+   <username>string</username>
+   <firstName>string</firstName>
+   <lastName>string</lastName>
+   <email>string</email>
+   <password>string</password>
+   <phone>string</phone>
+   <userStatus>0</userStatus>
+</User>]]></con:responseContent>
+  </con:response>
+</con:restMockAction>

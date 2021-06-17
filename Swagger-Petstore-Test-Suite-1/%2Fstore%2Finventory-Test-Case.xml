@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="c239f658-4c79-48a1-a944-022b91094647" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/store/inventory Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/store/inventory] located at [/store/inventory]</con:description>
+  <con:settings>
+    <con:setting id="c239f658-4c79-48a1-a944-022b91094647fileName">%2Fstore%2Finventory-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="7e05a5b0-5b84-4c7e-a149-238ce337caa7">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/store/inventory" methodName="getInventory" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="a07e7a3c-b65e-4a1f-a8a0-4f5c5cfcfa0f" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f8baca5c-3d81-458d-a37d-7a22d1a63810" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/pet/{petId}/uploadImage Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/pet/{petId}/uploadImage] located at [/pet/{petId}/uploadImage]</con:description>
+  <con:settings>
+    <con:setting id="f8baca5c-3d81-458d-a37d-7a22d1a63810fileName">%2Fpet%2F%7BpetId%7D%2FuploadImage-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="1911d547-ea8d-428b-8bb6-5e7934ddb252">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/pet/{petId}/uploadImage" methodName="uploadFile" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="3315c9c9-c353-4cee-b772-c50ffd73f8bb" mediaType="application/octet-stream">
+        <con:settings/>
+        <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

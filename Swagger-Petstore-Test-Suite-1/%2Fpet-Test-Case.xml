@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3d18430c-d42b-459d-8b2b-f5c1173df31b" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/pet Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/pet] located at [/pet]</con:description>
+  <con:settings>
+    <con:setting id="3d18430c-d42b-459d-8b2b-f5c1173df31bfileName">%2Fpet-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="0fe6ec49-721b-49d7-b29f-b9f8d43a07a9">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="81c44563-ea86-4c7d-98b0-9eb87472bd0c" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+        <con:request>{\r
+  "id" : 0,\r
+  "category" : {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  },\r
+  "name" : "doggie",\r
+  "photoUrls" : [ "string" ],\r
+  "tags" : [ {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  } ],\r
+  "status" : "available"\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 2" id="b24531c1-4f13-4109-bc31-3254182ddc5e">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 2" id="aa155105-0181-4b9c-9242-b2784f3d7445" mediaType="application/xml">
+        <con:settings/>
+        <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+        <con:request><![CDATA[<Pet>\r
+   <id>0</id>\r
+   <Category>\r
+      <id>0</id>\r
+      <name>string</name>\r
+   </Category>\r
+   <name>doggie</name>\r
+   <photoUrl>\r
+      <photoUrls>string</photoUrls>\r
+   </photoUrl>\r
+   <tag>\r
+      <Tag>\r
+         <id>0</id>\r
+         <name>string</name>\r
+      </Tag>\r
+   </tag>\r
+   <status>available</status>\r
+</Pet>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="f14f023e-e1b1-4178-bd9f-563a2d7ff7bd">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/pet" methodName="updatePet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1 2" id="a2456743-2780-47e8-981a-80af8dcc0829" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+        <con:request>{\r
+  "id" : 0,\r
+  "category" : {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  },\r
+  "name" : "doggie",\r
+  "photoUrls" : [ "string" ],\r
+  "tags" : [ {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  } ],\r
+  "status" : "available"\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 2 2" id="0ed4e486-9334-486e-a581-fb5f75b27463">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/pet" methodName="updatePet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 2 2" id="400d7e69-01cd-4636-a74a-0efca9bc4d42" mediaType="application/xml">
+        <con:settings/>
+        <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+        <con:request><![CDATA[<Pet>\r
+   <id>0</id>\r
+   <Category>\r
+      <id>0</id>\r
+      <name>string</name>\r
+   </Category>\r
+   <name>doggie</name>\r
+   <photoUrl>\r
+      <photoUrls>string</photoUrls>\r
+   </photoUrl>\r
+   <tag>\r
+      <Tag>\r
+         <id>0</id>\r
+         <name>string</name>\r
+      </Tag>\r
+   </tag>\r
+   <status>available</status>\r
+</Pet>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

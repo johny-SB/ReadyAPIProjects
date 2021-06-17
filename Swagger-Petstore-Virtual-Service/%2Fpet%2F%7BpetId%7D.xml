@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/pet/{petId}" method="GET" resourcePath="/pet/{petId}" id="27068e12-8ab0-4b2b-9782-14c41d5e9b3f" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="27068e12-8ab0-4b2b-9782-14c41d5e9b3ffileName">%2Fpet%2F%7BpetId%7D</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>PARAMETER</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>Rule 1</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>petId</con:parameterName>
+        <con:parameterValue>0</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>Response 1</con:responseName>
+    </con:ParameterDispatcherRule>
+  </con:parameterDispatcherRuleContainer>
+  <con:routeScript/>
+  <con:response name="Response 1" id="42758f60-4d88-4af5-8bd1-20d2f487e5bd" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+    <con:settings/>
+    <con:responseContent>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 2" id="636aa303-fe78-4703-93e7-7f0e11943141" httpResponseStatus="200" mediaType="application/xml" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+    <con:settings/>
+    <con:responseContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:responseContent>
+  </con:response>
+  <con:response name="Response 3" id="d7890104-66dc-4b82-a7e2-bc05df4fdc67" httpResponseStatus="404">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

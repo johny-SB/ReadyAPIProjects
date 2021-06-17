@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/pet/{petId}/uploadImage" path="/pet/{petId}/uploadImage" id="82684409-5eea-4eec-8922-ccf945378a1c" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="82684409-5eea-4eec-8922-ccf945378a1cfileName">%2Fpet%2F%7BpetId%7D%2FuploadImage</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="uploadFile" id="b1090c2e-8160-43db-9cd8-87ed4d9cae08" method="POST">
+    <con:description>uploads an image</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>ID of pet to update</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "code" : 0,
+  "type" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/octet-stream</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="3315c9c9-c353-4cee-b772-c50ffd73f8bb" mediaType="application/octet-stream">
+      <con:settings/>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

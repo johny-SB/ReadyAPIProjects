@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/user/createWithList" path="/user/createWithList" id="a4363d7d-5fd3-4d58-8da2-a745d8f76048" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a4363d7d-5fd3-4d58-8da2-a745d8f76048fileName">%2Fuser%2FcreateWithList</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="createUsersWithListInput" id="801d0bcc-4258-44d5-acf5-6cbcc7ab9c7e" method="POST">
+    <con:description>Creates list of users with given input array</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "username" : "string",
+  "firstName" : "string",
+  "lastName" : "string",
+  "email" : "string",
+  "password" : "string",
+  "phone" : "string",
+  "userStatus" : 0
+} ]</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="14b9250a-73e5-4c4a-a204-5d6c12aa9e44" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:request>[ {\r
+  "id" : 0,\r
+  "username" : "string",\r
+  "firstName" : "string",\r
+  "lastName" : "string",\r
+  "email" : "string",\r
+  "password" : "string",\r
+  "phone" : "string",\r
+  "userStatus" : 0\r
+} ]</con:request>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="b8f8a0ab-2a84-4d9b-847d-e9cac325e8e6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c436dfdd-5f12-4b1b-9481-728f2f15399a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>
