@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="af66fb06-d806-426f-8420-7014ec7e0d93" name="WeatherAPI Test Suite 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test suite generated for the REST service [WeatherAPI]</con:description>
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="GeneratableAllureReport@Folder">C:\Users\dhiraj.rajotia\OneDrive - SmartBear Software, Inc\Documents\Training\Allure Reports</con:setting>
+    <con:setting id="af66fb06-d806-426f-8420-7014ec7e0d93fileName">WeatherAPI-Test-Suite-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

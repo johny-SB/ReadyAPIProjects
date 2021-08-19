@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="weather" path="/data/2.5/weather" id="b1879c94-ebd2-480e-9937-923e91c7ea87" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b1879c94-ebd2-480e-9937-923e91c7ea87fileName">weather</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 2" id="e8c44714-61eb-456c-8ed4-f4cf39ceb18e" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>appid</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>q</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="5e8a6ea0-c44b-4185-87f1-0ec928848fdf" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="New header" value="" xmlns="http://eviware.com/soapui/config"/></con:setting>
+      </con:settings>
+      <con:endpoint>http://api.openweathermap.org</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://api.openweathermap.org/data/2.5/weather</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>aaa</con:selectedAuthProfile>
+        <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="appid" value="2288725f98e49f98c3c00044cc8d7618"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>q</con:entry>
+        <con:entry>appid</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
