@@ -4,7 +4,7 @@
   <con:settings>
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
-    <con:setting id="FlowLayout">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
     <con:setting id="ErrorDetails">true</con:setting>
     <con:setting id="IncludeCoverage">true</con:setting>
     <con:setting id="GeneratableAllureReport@Folder">C:\Users\dhiraj.rajotia\OneDrive - SmartBear Software, Inc\Documents\Training\ReadyAPIProject resources</con:setting>
